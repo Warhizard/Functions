@@ -46,4 +46,5 @@ void main()
 	cout << a << "*" << b << "=" << Mul(a, b) << endl;
 	cout << a << "/" << b << "=" << Div(a, b) << endl;
 	cout << a << "^" << b << "=" << Pow(a, b) << endl;
+
 }
