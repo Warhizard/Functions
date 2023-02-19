@@ -1,8 +1,14 @@
 #include <iostream>
 using namespace std;
 
+#define delimiter "\n-----------------------------------------------------------\n"
+
 void FillRand(int arr[], const int n, int minRand=0, int maxRand=100);
+void FillRand(double arr[], const int n, double minRand = 0, double maxRand = 100);
+
 void Print(int arr[], const int n);
+void Print(double arr[], const int n);
+
 int Sum(int arr[], const int n);
 double Avg(int arr[], const int n);
 int minValueIn(int arr[], const int n);
@@ -32,13 +38,24 @@ void main()
 	cout << "Уникальные случайные числа в массиве в заданном диапазоне: " << endl;
 	Print(arr, n);
 
-	int number_of_shifts;
+	/*int number_of_shifts;
 	cout << "Введите количество сдвигов: "; cin >> number_of_shifts;
 	shiftRight(arr, n, number_of_shifts);
 	Print(arr, n);
 	cout << "Повторяющиеся числа в массиве: " << endl;
 	Search(arr, n);
-	Print(arr, n);
+	Print(arr, n);*/
+
+	cout << delimiter  << endl;
+
+	const int SIZE = 8;
+	double brr[SIZE];
+	FillRand(brr, SIZE);  
+	Print(brr, SIZE);
+	/*cout << "Сумма элементов массива: " << Sum(brr, SIZE) << endl;
+	cout << "Среднее-арифметическое элементов массива: " << Avg(arr, SIZE) << endl;
+	cout << "Минимальное значение элементов массива: " << minValueIn(brr, SIZE) << endl;
+	cout << "Максимальное значение элементов массива: " << maxValueIn(brr, SIZE) << endl;*/
 
 }
 
@@ -57,6 +74,24 @@ void FillRand(int arr[], const int n, int minRand, int maxRand)
 	}
 }
 
+void FillRand(double arr[], const int n, double minRand, double maxRand)
+{
+	if (minRand > maxRand)
+	{
+		int buffer = minRand;
+		minRand = maxRand;
+		maxRand = buffer;
+	}
+	if (minRand == maxRand)maxRand++;
+	minRand *= 100;
+	maxRand *= 100;
+	for (int i = 0; i < n; i++)
+	{
+		arr[i] = rand() % int((maxRand - minRand) + minRand);
+		arr[i] /= 100;
+	}
+}
+
 void Print(int arr[], const int n)
 {
 		for (int i = 0; i < n; i++)
@@ -64,6 +99,15 @@ void Print(int arr[], const int n)
 			cout << arr[i] << "\t";
 		}
 		cout << endl;
+}
+
+void Print(double arr[], const int n)
+{
+	for (int i = 0; i < n; i++)
+	{
+		cout << arr[i] << "\t";
+	}
+	cout << endl;
 }
 
 int Sum(int arr[], const int n)
