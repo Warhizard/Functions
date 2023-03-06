@@ -24,10 +24,19 @@
     <ClCompile Include="Print.cpp">
       <Filter>Файлы ресурсов</Filter>
     </ClCompile>
-    <ClCompile Include="Sum.cpp">
+    <ClCompile Include="Statistics.cpp">
       <Filter>Файлы ресурсов</Filter>
     </ClCompile>
-    <ClCompile Include="Avg.cpp">
+    <ClCompile Include="Shift.cpp">
+      <Filter>Файлы ресурсов</Filter>
+    </ClCompile>
+    <ClCompile Include="Search.cpp">
+      <Filter>Файлы ресурсов</Filter>
+    </ClCompile>
+    <ClCompile Include="Sort.cpp">
+      <Filter>Файлы ресурсов</Filter>
+    </ClCompile>
+    <ClCompile Include="UniqRand.cpp">
       <Filter>Файлы ресурсов</Filter>
     </ClCompile>
   </ItemGroup>
@@ -44,10 +53,19 @@
     <ClInclude Include="Print.h">
       <Filter>Исходные файлы</Filter>
     </ClInclude>
-    <ClInclude Include="Sum.h">
+    <ClInclude Include="Statistics.h">
       <Filter>Исходные файлы</Filter>
     </ClInclude>
-    <ClInclude Include="Avg.h">
+    <ClInclude Include="Shift.h">
+      <Filter>Исходные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="UniqRand.h">
+      <Filter>Исходные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="Sort.h">
+      <Filter>Исходные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="Search.h">
       <Filter>Исходные файлы</Filter>
     </ClInclude>
   </ItemGroup>
