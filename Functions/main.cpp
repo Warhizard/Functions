@@ -1,4 +1,4 @@
-#include <iostream>
+п»ї#include <iostream>
 using namespace std;
 
 int Add(int a, int b)
@@ -7,17 +7,17 @@ int Add(int a, int b)
 	return sum;
 }
 
-int Sub(int a, int b)// Substraction - умножение 
+int Sub(int a, int b)// Substraction - СѓРјРЅРѕР¶РµРЅРёРµ 
 {
 	return a - b;
 }
 
-int Mul(int a, int b)// Multiplication - умножение
+int Mul(int a, int b)// Multiplication - СѓРјРЅРѕР¶РµРЅРёРµ
 {
 	return a * b;
 }
 
-int Div(int a, int b)//Division - деление
+int Div(int a, int b)//Division - РґРµР»РµРЅРёРµ
 {
 	return a / b;
 }
@@ -35,11 +35,11 @@ void main()
 {
 	setlocale(LC_ALL, "");
 	int a; int b;
-	cout << "Введите 2 числа: "; 
+	cout << "Р’РІРµРґРёС‚Рµ 2 С‡РёСЃР»Р°: "; 
 	cin >> a;
 	cin >> b;
 
-	int c = Add(a, b); //использование функции -Function call
+	int c = Add(a, b); //РёСЃРїРѕР»СЊР·РѕРІР°РЅРёРµ С„СѓРЅРєС†РёРё -Function call
 
 	cout << a << "+" << b << "=" << c << endl;
 	cout << a << "-" << b << "=" << Sub(a,b) << endl;
