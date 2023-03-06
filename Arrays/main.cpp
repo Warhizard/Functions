@@ -10,7 +10,7 @@
 
 void main()
 {
-	setlocale(LC_ALL, "ru");
+	setlocale(LC_ALL, "");
 	const int n = 10;
 	int arr[n] = {};
 	cout << "INT:\n";
