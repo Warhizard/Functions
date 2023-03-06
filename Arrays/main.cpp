@@ -1,36 +1,20 @@
-﻿#include <iostream>
-using namespace std;
-
-#define delimiter "\n-----------------------------------------------------------\n"
-
-const int ROWS = 3;
-const int COLS = 4;
+﻿#include "stdafx.h"
+#include "constants.h"
+#include "FillRand.h"
+#include "Print.h"
+#include "Sum.h"
 
 
-void FillRand(int arr[], const int n, int minRand=0, int maxRand=100);
-void FillRand(double arr[], const int n, double minRand = 0, double maxRand = 100);
-void FillRand(int arr[ROWS][COLS], const int ROWS, const int COLS);
-void FillRand(double arr[ROWS][COLS], const int ROWS, const int COLS);
-void FillRand(float arr[], const int n, float minRand = 0, float maxRand = 100);
-void FillRand(float arr[ROWS][COLS], const int ROWS, const int COLS);
-void FillRand(char arr[], const int n, char minRand = 0, char maxRand = 100);
-void FillRand(char arr[ROWS][COLS], const int ROWS, const int COLS);
 
 
-template <typename T>
-void Print(T arr[], const int n);
-template <typename T>
-void Print(T arr[ROWS][COLS], const int ROWS,const int COLS);
 
-template <typename T>
-T Sum(T arr[], const int n);
-template <typename T>
-T Sum(T arr[ROWS][COLS], const int ROWS, const int COLS);
 
-template <typename T>
-double Avg(T arr[], const int n);
-template <typename T>
-double Avg(T arr[ROWS][COLS], const int ROWS, const int COLS);
+
+
+
+
+
+
 
 
 template <typename T>
@@ -192,182 +176,9 @@ void main()
 		
 }
 
-void FillRand(int arr[], const int n, int minRand, int maxRand)
-{
-	if (minRand > maxRand)
-	{
-		int buffer = minRand;
-		minRand = maxRand;
-		maxRand = buffer;
-	}
-	if (minRand == maxRand)maxRand++;
-	//заполнение случайными числами
-	for (int i = 0; i < n; i++)
-	{
-		arr[i] = rand() % (maxRand - minRand) + minRand;
-	}
-}
-
-void FillRand(double arr[], const int n, double minRand, double maxRand)
-{
-	if (minRand > maxRand)
-	{
-		double buffer = minRand;
-		minRand = maxRand;
-		maxRand = buffer;
-	}
-	if (minRand == maxRand)maxRand++;
-	minRand *= 100;
-	maxRand *= 100;
-	//заполнение случайными числами
-	for (int i = 0; i < n; i++)
-	{
-		arr[i] = rand() % int((maxRand - minRand) + minRand);
-		arr[i] /= 100;
-	}
-}
-
-void FillRand(float crr[], const int n, float minRand, float maxRand)
-{
-	if (minRand > maxRand)
-	{
-		float buffer = minRand;
-		minRand = maxRand;
-		maxRand = buffer;
-	}
-	if (minRand == maxRand)maxRand++;
-	minRand *= 100;
-	maxRand *= 100;
-	//заполнение случайными числами
-	for (int i = 0; i < n; i++)
-	{
-		crr[i] = rand() % int((maxRand - minRand) + minRand);
-		crr[i] /= 100;
-	}
-}
-
-void FillRand(char arr[], const int n, char minRand, char maxRand)
-{
-	if (minRand > maxRand)
-	{
-		char buffer = minRand;
-		minRand = maxRand;
-		maxRand = buffer;
-	}
-	if (minRand == maxRand)maxRand++;
-	minRand *= 100;
-	maxRand *= 100;
-	//заполнение случайными числами
-	for (int i = 0; i < n; i++)
-	{
-		arr[i] = rand();
-	}
-}
 
 
-void FillRand(int arr[ROWS][COLS], const int ROWS, const int COLS)
-{
-	for (int i = 0; i < ROWS; i++)
-	{
-		for (int j = 0; j < COLS; j++)
-		{
-			arr[i][j] = rand() % 100;
-		}
-	}
-}
 
-void FillRand(double arr[ROWS][COLS], const int ROWS, const int COLS)
-{
-	for (int i = 0; i < ROWS; i++)
-	{
-		for (int j = 0; j < COLS; j++)
-		{
-			arr[i][j] = rand() % 100;
-		}
-	}
-}
-
-void FillRand(float arr[ROWS][COLS], const int ROWS, const int COLS)
-{
-	for (int i = 0; i < ROWS; i++)
-	{
-		for (int j = 0; j < COLS; j++)
-		{
-			arr[i][j] = rand() % 100;
-		}
-	}
-}
-
-void FillRand(char arr[ROWS][COLS], const int ROWS, const int COLS)
-{
-	for (int i = 0; i < ROWS; i++)
-	{
-		for (int j = 0; j < COLS; j++)
-		{
-			arr[i][j] = rand() % 100;
-		}
-	}
-}
-template <typename T>
-void Print(T arr[], const int n)
-{
-		for (int i = 0; i < n; i++)
-		{
-			cout << arr[i] << "\t";
-		}
-		cout << endl;
-}
-
-template <typename T>
-void Print(T arr[ROWS][COLS], const int ROWS, const int COLS)
-{
-	for (int i = 0; i < ROWS; i++)
-	{
-		for (int j = 0; j < COLS; j++)
-		{
-			cout << arr[i][j] << "\t";
-		}
-		cout << endl;
-	}
-}
-template <typename T>
-T Sum(T arr[], const int n)
-{
-    T sum = 0;
-	for (int i = 0; i < n; i++)
-	{
-		sum += arr[i];
-	}
-	return sum;
-}
-
-template <typename T>
-T Sum(T arr[ROWS][COLS], const int ROWS, const int COLS)
-{
-	//возвращает сумму элементов массива
-	T sum = 0;
-	for (int i = 0; i < ROWS; i++)
-	{
-		for (int j = 0; j < COLS; j++)
-		{
-			sum += arr[i][j];
-		}
-	}
-	return sum;
-	cout << endl;
-}
-
-template <typename T>
-double Avg(T arr[], const int n)
-{
-	return (double)Sum(arr, n) / n;
-}
-
-template <typename T>
-double Avg(T arr[ROWS][COLS], const int ROWS, const int COLS)
-{
-	return (double)Sum(arr, ROWS, COLS) / ROWS, COLS;
-}
 
 template <typename T>
 T minValueIn(T arr[], const int n)
