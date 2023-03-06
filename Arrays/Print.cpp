@@ -1,4 +1,4 @@
-#include "Print.h"
+п»ї#include "Print.h"
 
 void Print(int arr[], const int n)
 {
@@ -44,7 +44,7 @@ void Print(double arr[ROWS][COLS], const int ROWS, const int COLS)
 
 void Print(float arr[], const int n)
 {
-	//Вывод массива на экран:
+	//Р’С‹РІРѕРґ РјР°СЃСЃРёРІР° РЅР° СЌРєСЂР°РЅ:
 	for (int i = 0; i < n; i++)
 	{
 		cout << arr[i] << "\t";
@@ -66,7 +66,7 @@ void Print(float arr[ROWS][COLS], const int ROWS, const int COLS)
 
 void Print(char arr[], const int n)
 {
-	//Вывод массива на экран:
+	//Р’С‹РІРѕРґ РјР°СЃСЃРёРІР° РЅР° СЌРєСЂР°РЅ:
 	for (int i = 0; i < n; i++)
 	{
 		cout << arr[i] << "\t";

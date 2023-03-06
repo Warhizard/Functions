@@ -1,4 +1,4 @@
-#include "Shift.h"
+п»ї#include "Shift.h"
 
 void shiftLeft(int arr[], const int n, int number_of_shifts)
 {
@@ -16,7 +16,7 @@ void shiftLeft(int arr[], const int n, int number_of_shifts)
 
 void shiftLeft(int arr[ROWS][COLS], const int ROWS, const int COLS, int number_of_shifts)
 {
-	//выполняет циклический сдвиг массива влево
+	//РІС‹РїРѕР»РЅСЏРµС‚ С†РёРєР»РёС‡РµСЃРєРёР№ СЃРґРІРёРі РјР°СЃСЃРёРІР° РІР»РµРІРѕ
 	for (int i = 0; i < number_of_shifts; i++)
 	{
 		int buffer = arr[0][0];
@@ -34,7 +34,7 @@ void shiftLeft(int arr[ROWS][COLS], const int ROWS, const int COLS, int number_o
 
 void shiftLeft(double arr[], const int n, int number_of_shifts)
 {
-	//выполняет циклический сдвиг массива влево
+	//РІС‹РїРѕР»РЅСЏРµС‚ С†РёРєР»РёС‡РµСЃРєРёР№ СЃРґРІРёРі РјР°СЃСЃРёРІР° РІР»РµРІРѕ
 	for (int i = 0; i < number_of_shifts; i++)
 	{
 		double buffer = arr[0];
@@ -48,7 +48,7 @@ void shiftLeft(double arr[], const int n, int number_of_shifts)
 
 void shiftLeft(double arr[ROWS][COLS], const int ROWS, const int COLS, int number_of_shifts)
 {
-	//выполняет циклический сдвиг массива влево
+	//РІС‹РїРѕР»РЅСЏРµС‚ С†РёРєР»РёС‡РµСЃРєРёР№ СЃРґРІРёРі РјР°СЃСЃРёРІР° РІР»РµРІРѕ
 	for (int i = 0; i < number_of_shifts; i++)
 	{
 		double buffer = arr[0][0];
@@ -65,7 +65,7 @@ void shiftLeft(double arr[ROWS][COLS], const int ROWS, const int COLS, int numbe
 
 void shiftLeft(float arr[], const int n, int number_of_shifts)
 {
-	//выполняет циклический сдвиг массива влево
+	//РІС‹РїРѕР»РЅСЏРµС‚ С†РёРєР»РёС‡РµСЃРєРёР№ СЃРґРІРёРі РјР°СЃСЃРёРІР° РІР»РµРІРѕ
 	for (int i = 0; i < number_of_shifts; i++)
 	{
 		float buffer = arr[0];
@@ -79,7 +79,7 @@ void shiftLeft(float arr[], const int n, int number_of_shifts)
 
 void shiftLeft(float arr[ROWS][COLS], const int ROWS, const int COLS, int number_of_shifts)
 {
-	//выполняет циклический сдвиг массива влево
+	//РІС‹РїРѕР»РЅСЏРµС‚ С†РёРєР»РёС‡РµСЃРєРёР№ СЃРґРІРёРі РјР°СЃСЃРёРІР° РІР»РµРІРѕ
 	for (int i = 0; i < number_of_shifts; i++)
 	{
 		float buffer = arr[0][0];
@@ -97,7 +97,7 @@ void shiftLeft(float arr[ROWS][COLS], const int ROWS, const int COLS, int number
 
 void shiftLeft(char arr[], const int n, int number_of_shifts)
 {
-	//выполняет циклический сдвиг массива влево
+	//РІС‹РїРѕР»РЅСЏРµС‚ С†РёРєР»РёС‡РµСЃРєРёР№ СЃРґРІРёРі РјР°СЃСЃРёРІР° РІР»РµРІРѕ
 	for (int i = 0; i < number_of_shifts; i++)
 	{
 		char buffer = arr[0];
@@ -111,7 +111,7 @@ void shiftLeft(char arr[], const int n, int number_of_shifts)
 
 void shiftLeft(char arr[ROWS][COLS], const int ROWS, const int COLS, int number_of_shifts)
 {
-	//выполняет циклический сдвиг массива влево
+	//РІС‹РїРѕР»РЅСЏРµС‚ С†РёРєР»РёС‡РµСЃРєРёР№ СЃРґРІРёРі РјР°СЃСЃРёРІР° РІР»РµРІРѕ
 	for (int i = 0; i < number_of_shifts; i++)
 	{
 		char buffer = arr[0][0];
@@ -134,7 +134,7 @@ void shiftRight(int arr[], const int n, int number_of_shifts)
 
 void shiftRight(int arr[ROWS][COLS], const int ROWS, const int COLS, int number_of_shifts)
 {
-	//выполняет циклический сдвиг массива вправо
+	//РІС‹РїРѕР»РЅСЏРµС‚ С†РёРєР»РёС‡РµСЃРєРёР№ СЃРґРІРёРі РјР°СЃСЃРёРІР° РІРїСЂР°РІРѕ
 	number_of_shifts = number_of_shifts % (ROWS * COLS);
 	number_of_shifts = ROWS * COLS - number_of_shifts;
 	shiftLeft(arr, ROWS, ROWS, COLS);
@@ -142,13 +142,13 @@ void shiftRight(int arr[ROWS][COLS], const int ROWS, const int COLS, int number_
 
 void shiftRight(double arr[], const int n, int number_of_shifts)
 {
-	//выполняет циклический сдвиг массива вправо
+	//РІС‹РїРѕР»РЅСЏРµС‚ С†РёРєР»РёС‡РµСЃРєРёР№ СЃРґРІРёРі РјР°СЃСЃРёРІР° РІРїСЂР°РІРѕ
 	shiftLeft(arr, n, n - number_of_shifts);
 }
 
 void shiftRight(double arr[ROWS][COLS], const int ROWS, const int COLS, int number_of_shifts)
 {
-	//выполняет циклический сдвиг массива вправо
+	//РІС‹РїРѕР»РЅСЏРµС‚ С†РёРєР»РёС‡РµСЃРєРёР№ СЃРґРІРёРі РјР°СЃСЃРёРІР° РІРїСЂР°РІРѕ
 	number_of_shifts = number_of_shifts % (ROWS * COLS);
 	number_of_shifts = ROWS * COLS - number_of_shifts;
 	shiftLeft(arr, ROWS, ROWS, COLS);
@@ -156,13 +156,13 @@ void shiftRight(double arr[ROWS][COLS], const int ROWS, const int COLS, int numb
 
 void shiftRight(float arr[], const int n, int number_of_shifts)
 {
-	//выполняет циклический сдвиг массива вправо
+	//РІС‹РїРѕР»РЅСЏРµС‚ С†РёРєР»РёС‡РµСЃРєРёР№ СЃРґРІРёРі РјР°СЃСЃРёРІР° РІРїСЂР°РІРѕ
 	shiftLeft(arr, n, n - number_of_shifts);
 }
 
 void shiftRight(float arr[ROWS][COLS], const int ROWS, const int COLS, int number_of_shifts)
 {
-	//выполняет циклический сдвиг массива вправо
+	//РІС‹РїРѕР»РЅСЏРµС‚ С†РёРєР»РёС‡РµСЃРєРёР№ СЃРґРІРёРі РјР°СЃСЃРёРІР° РІРїСЂР°РІРѕ
 	number_of_shifts = number_of_shifts % (ROWS * COLS);
 	number_of_shifts = ROWS * COLS - number_of_shifts;
 	shiftLeft(arr, ROWS, ROWS, COLS);
@@ -170,13 +170,13 @@ void shiftRight(float arr[ROWS][COLS], const int ROWS, const int COLS, int numbe
 
 void shiftRight(char arr[], const int n, int number_of_shifts)
 {
-	//выполняет циклический сдвиг массива вправо
+	//РІС‹РїРѕР»РЅСЏРµС‚ С†РёРєР»РёС‡РµСЃРєРёР№ СЃРґРІРёРі РјР°СЃСЃРёРІР° РІРїСЂР°РІРѕ
 	shiftLeft(arr, n, n - number_of_shifts);
 }
 
 void shiftRight(char arr[ROWS][COLS], const int ROWS, const int COLS, int number_of_shifts)
 {
-	//выполняет циклический сдвиг массива вправо
+	//РІС‹РїРѕР»РЅСЏРµС‚ С†РёРєР»РёС‡РµСЃРєРёР№ СЃРґРІРёРі РјР°СЃСЃРёРІР° РІРїСЂР°РІРѕ
 	number_of_shifts = number_of_shifts % (ROWS * COLS);
 	number_of_shifts = ROWS * COLS - number_of_shifts;
 	shiftLeft(arr, ROWS, ROWS, COLS);

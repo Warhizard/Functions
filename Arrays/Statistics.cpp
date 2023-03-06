@@ -1,4 +1,4 @@
-#include "Statistics.h"
+п»ї#include "Statistics.h"
 
 int Sum(int arr[], const int n)
 {
@@ -12,7 +12,7 @@ int Sum(int arr[], const int n)
 
 int Sum(int arr[ROWS][COLS], const int ROWS, const int COLS)
 {
-	//возвращает сумму элементов массива
+	//РІРѕР·РІСЂР°С‰Р°РµС‚ СЃСѓРјРјСѓ СЌР»РµРјРµРЅС‚РѕРІ РјР°СЃСЃРёРІР°
 	int sum = 0;
 	for (int i = 0; i < ROWS; i++)
 	{
@@ -28,7 +28,7 @@ int Sum(int arr[ROWS][COLS], const int ROWS, const int COLS)
 
 double Sum(double arr[], const int n)
 {
-	//возвращает сумму элементов массива
+	//РІРѕР·РІСЂР°С‰Р°РµС‚ СЃСѓРјРјСѓ СЌР»РµРјРµРЅС‚РѕРІ РјР°СЃСЃРёРІР°
 	double sum = 0;
 	for (int i = 0; i < n; i++)
 	{
@@ -40,7 +40,7 @@ double Sum(double arr[], const int n)
 
 double Sum(double arr[ROWS][COLS], const int ROWS, const int COLS)
 {
-	//возвращает сумму элементов массива
+	//РІРѕР·РІСЂР°С‰Р°РµС‚ СЃСѓРјРјСѓ СЌР»РµРјРµРЅС‚РѕРІ РјР°СЃСЃРёРІР°
 	double sum = 0;
 	for (int i = 0; i < ROWS; i++)
 	{
@@ -55,7 +55,7 @@ double Sum(double arr[ROWS][COLS], const int ROWS, const int COLS)
 
 float Sum(float arr[], const int n)
 {
-	//возвращает сумму элементов массива
+	//РІРѕР·РІСЂР°С‰Р°РµС‚ СЃСѓРјРјСѓ СЌР»РµРјРµРЅС‚РѕРІ РјР°СЃСЃРёРІР°
 	float sum = 0;
 	for (int i = 0; i < n; i++)
 	{
@@ -67,7 +67,7 @@ float Sum(float arr[], const int n)
 
 float Sum(float arr[ROWS][COLS], const int ROWS, const int COLS)
 {
-	//возвращает сумму элементов массива
+	//РІРѕР·РІСЂР°С‰Р°РµС‚ СЃСѓРјРјСѓ СЌР»РµРјРµРЅС‚РѕРІ РјР°СЃСЃРёРІР°
 	float sum = 0;
 	for (int i = 0; i < ROWS; i++)
 	{
@@ -82,7 +82,7 @@ float Sum(float arr[ROWS][COLS], const int ROWS, const int COLS)
 
 char Sum(char arr[], const int n)
 {
-	//возвращает сумму элементов массива
+	//РІРѕР·РІСЂР°С‰Р°РµС‚ СЃСѓРјРјСѓ СЌР»РµРјРµРЅС‚РѕРІ РјР°СЃСЃРёРІР°
 	char sum = 0;
 	for (int i = 0; i < n; i++)
 	{
@@ -94,7 +94,7 @@ char Sum(char arr[], const int n)
 
 char Sum(char arr[ROWS][COLS], const int ROWS, const int COLS)
 {
-	//возвращает сумму элементов массива
+	//РІРѕР·РІСЂР°С‰Р°РµС‚ СЃСѓРјРјСѓ СЌР»РµРјРµРЅС‚РѕРІ РјР°СЃСЃРёРІР°
 	char sum = 0;
 	for (int i = 0; i < ROWS; i++)
 	{
@@ -193,7 +193,7 @@ double minValueIn(double arr[], const int n)
 
 double minValueIn(double arr[ROWS][COLS], const int ROWS, const int COLS)
 {
-	//возвращает минимальное значение из массива
+	//РІРѕР·РІСЂР°С‰Р°РµС‚ РјРёРЅРёРјР°Р»СЊРЅРѕРµ Р·РЅР°С‡РµРЅРёРµ РёР· РјР°СЃСЃРёРІР°
 	double min = arr[0][0];
 	for (int i = 0; i < ROWS; i++)
 	{
@@ -208,7 +208,7 @@ double minValueIn(double arr[ROWS][COLS], const int ROWS, const int COLS)
 
 float minValueIn(float arr[], const int n)
 {
-	//возвращает минимальное значение из массива
+	//РІРѕР·РІСЂР°С‰Р°РµС‚ РјРёРЅРёРјР°Р»СЊРЅРѕРµ Р·РЅР°С‡РµРЅРёРµ РёР· РјР°СЃСЃРёРІР°
 	float min = arr[0];
 	for (int i = 0; i < n; i++)
 	{
@@ -219,7 +219,7 @@ float minValueIn(float arr[], const int n)
 
 float minValueIn(float arr[ROWS][COLS], const int ROWS, const int COLS)
 {
-	//возвращает минимальное значение из массива
+	//РІРѕР·РІСЂР°С‰Р°РµС‚ РјРёРЅРёРјР°Р»СЊРЅРѕРµ Р·РЅР°С‡РµРЅРёРµ РёР· РјР°СЃСЃРёРІР°
 	float min = arr[0][0];
 	for (int i = 0; i < ROWS; i++)
 	{
@@ -234,7 +234,7 @@ float minValueIn(float arr[ROWS][COLS], const int ROWS, const int COLS)
 
 char minValueIn(char arr[], const int n)
 {
-	//возвращает минимальное значение из массива
+	//РІРѕР·РІСЂР°С‰Р°РµС‚ РјРёРЅРёРјР°Р»СЊРЅРѕРµ Р·РЅР°С‡РµРЅРёРµ РёР· РјР°СЃСЃРёРІР°
 	char min = arr[0];
 	for (int i = 0; i < n; i++)
 	{
@@ -245,7 +245,7 @@ char minValueIn(char arr[], const int n)
 
 char minValueIn(char arr[ROWS][COLS], const int ROWS, const int COLS)
 {
-	//возвращает минимальное значение из массива
+	//РІРѕР·РІСЂР°С‰Р°РµС‚ РјРёРЅРёРјР°Р»СЊРЅРѕРµ Р·РЅР°С‡РµРЅРёРµ РёР· РјР°СЃСЃРёРІР°
 	char min = arr[0][0];
 	for (int i = 0; i < ROWS; i++)
 	{
@@ -269,7 +269,7 @@ int maxValueIn(int arr[], const int n)
 
 int maxValueIn(int arr[ROWS][COLS], const int ROWS, const int COLS)
 {
-	//возвращает максимальное значение из массива
+	//РІРѕР·РІСЂР°С‰Р°РµС‚ РјР°РєСЃРёРјР°Р»СЊРЅРѕРµ Р·РЅР°С‡РµРЅРёРµ РёР· РјР°СЃСЃРёРІР°
 	int max = arr[0][0];
 	for (int i = 0; i < ROWS; i++)
 	{
@@ -283,7 +283,7 @@ int maxValueIn(int arr[ROWS][COLS], const int ROWS, const int COLS)
 
 double maxValueIn(double arr[], const int n)
 {
-	//возвращает максимальное значение из массива
+	//РІРѕР·РІСЂР°С‰Р°РµС‚ РјР°РєСЃРёРјР°Р»СЊРЅРѕРµ Р·РЅР°С‡РµРЅРёРµ РёР· РјР°СЃСЃРёРІР°
 	double max = arr[0];
 	for (int i = 0; i < n; i++)
 	{
@@ -294,7 +294,7 @@ double maxValueIn(double arr[], const int n)
 
 double maxValueIn(double arr[ROWS][COLS], const int ROWS, const int COLS)
 {
-	//возвращает максимальное значение из массива
+	//РІРѕР·РІСЂР°С‰Р°РµС‚ РјР°РєСЃРёРјР°Р»СЊРЅРѕРµ Р·РЅР°С‡РµРЅРёРµ РёР· РјР°СЃСЃРёРІР°
 	double max = arr[0][0];
 	for (int i = 0; i < ROWS; i++)
 	{
@@ -308,7 +308,7 @@ double maxValueIn(double arr[ROWS][COLS], const int ROWS, const int COLS)
 
 float maxValueIn(float arr[], const int n)
 {
-	//возвращает максимальное значение из массива
+	//РІРѕР·РІСЂР°С‰Р°РµС‚ РјР°РєСЃРёРјР°Р»СЊРЅРѕРµ Р·РЅР°С‡РµРЅРёРµ РёР· РјР°СЃСЃРёРІР°
 	float max = arr[0];
 	for (int i = 0; i < n; i++)
 	{
@@ -319,7 +319,7 @@ float maxValueIn(float arr[], const int n)
 
 float maxValueIn(float arr[ROWS][COLS], const int ROWS, const int COLS)
 {
-	//возвращает максимальное значение из массива
+	//РІРѕР·РІСЂР°С‰Р°РµС‚ РјР°РєСЃРёРјР°Р»СЊРЅРѕРµ Р·РЅР°С‡РµРЅРёРµ РёР· РјР°СЃСЃРёРІР°
 	float max = arr[0][0];
 	for (int i = 0; i < ROWS; i++)
 	{
@@ -333,7 +333,7 @@ float maxValueIn(float arr[ROWS][COLS], const int ROWS, const int COLS)
 
 char maxValueIn(char arr[], const int n)
 {
-	//возвращает максимальное значение из массива
+	//РІРѕР·РІСЂР°С‰Р°РµС‚ РјР°РєСЃРёРјР°Р»СЊРЅРѕРµ Р·РЅР°С‡РµРЅРёРµ РёР· РјР°СЃСЃРёРІР°
 	char max = arr[0];
 	for (int i = 0; i < n; i++)
 	{
@@ -344,7 +344,7 @@ char maxValueIn(char arr[], const int n)
 
 char maxValueIn(char arr[ROWS][COLS], const int ROWS, const int COLS)
 {
-	//возвращает максимальное значение из массива
+	//РІРѕР·РІСЂР°С‰Р°РµС‚ РјР°РєСЃРёРјР°Р»СЊРЅРѕРµ Р·РЅР°С‡РµРЅРёРµ РёР· РјР°СЃСЃРёРІР°
 	char max = arr[0][0];
 	for (int i = 0; i < ROWS; i++)
 	{

@@ -1,4 +1,4 @@
-#include "FillRand.h"
+п»ї#include "FillRand.h"
 
 void FillRand(int arr[], const int n, int minRand, int maxRand)
 {
@@ -9,7 +9,7 @@ void FillRand(int arr[], const int n, int minRand, int maxRand)
 		maxRand = buffer;
 	}
 	if (minRand == maxRand)maxRand++;
-	//заполнение случайными числами
+	//Р·Р°РїРѕР»РЅРµРЅРёРµ СЃР»СѓС‡Р°Р№РЅС‹РјРё С‡РёСЃР»Р°РјРё
 	for (int i = 0; i < n; i++)
 	{
 		arr[i] = rand() % (maxRand - minRand) + minRand;
@@ -27,7 +27,7 @@ void FillRand(double arr[], const int n, double minRand, double maxRand)
 	if (minRand == maxRand)maxRand++;
 	minRand *= 100;
 	maxRand *= 100;
-	//заполнение случайными числами
+	//Р·Р°РїРѕР»РЅРµРЅРёРµ СЃР»СѓС‡Р°Р№РЅС‹РјРё С‡РёСЃР»Р°РјРё
 	for (int i = 0; i < n; i++)
 	{
 		arr[i] = rand() % int((maxRand - minRand) + minRand);
@@ -46,7 +46,7 @@ void FillRand(float crr[], const int n, float minRand, float maxRand)
 	if (minRand == maxRand)maxRand++;
 	minRand *= 100;
 	maxRand *= 100;
-	//заполнение случайными числами
+	//Р·Р°РїРѕР»РЅРµРЅРёРµ СЃР»СѓС‡Р°Р№РЅС‹РјРё С‡РёСЃР»Р°РјРё
 	for (int i = 0; i < n; i++)
 	{
 		crr[i] = rand() % int((maxRand - minRand) + minRand);
@@ -65,7 +65,7 @@ void FillRand(char arr[], const int n, char minRand, char maxRand)
 	if (minRand == maxRand)maxRand++;
 	minRand *= 100;
 	maxRand *= 100;
-	//заполнение случайными числами
+	//Р·Р°РїРѕР»РЅРµРЅРёРµ СЃР»СѓС‡Р°Р№РЅС‹РјРё С‡РёСЃР»Р°РјРё
 	for (int i = 0; i < n; i++)
 	{
 		arr[i] = rand();

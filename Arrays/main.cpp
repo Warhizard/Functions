@@ -1,4 +1,4 @@
-#include "stdafx.h"
+ï»¿#include "stdafx.h"
 #include "constants.h"
 #include "FillRand.h"
 #include "Print.h"
@@ -16,16 +16,16 @@ void main()
 	cout << "INT:\n";
 	FillRand(arr, n, 0, 100);
 	Print(arr, n);
-	cout << "Ñóììà ýëåìåíòîâ ìàññèâà: " << Sum(arr, n) << endl;
-	cout << "Ñðåäíåå àðèôìåòè÷åñêîå ýëåìåíòîâ ìàññèâà: " << Avg(arr, n) << endl;
-	cout << "Ìèíèìàëüíîå çíà÷åíèå èç ìàññèâà: " << minValueIn(arr, n) << endl;
-	cout << "Ìàêñèìàëüíîå çíà÷åíèå èç ìàññèâà: " << maxValueIn(arr, n) << endl;
+	cout << "Ð¡ÑƒÐ¼Ð¼Ð° ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð² Ð¼Ð°ÑÑÐ¸Ð²Ð°: " << Sum(arr, n) << endl;
+	cout << "Ð¡Ñ€ÐµÐ´Ð½ÐµÐµ Ð°Ñ€Ð¸Ñ„Ð¼ÐµÑ‚Ð¸Ñ‡ÐµÑÐºÐ¾Ðµ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð² Ð¼Ð°ÑÑÐ¸Ð²Ð°: " << Avg(arr, n) << endl;
+	cout << "ÐœÐ¸Ð½Ð¸Ð¼Ð°Ð»ÑŒÐ½Ð¾Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ Ð¸Ð· Ð¼Ð°ÑÑÐ¸Ð²Ð°: " << minValueIn(arr, n) << endl;
+	cout << "ÐœÐ°ÐºÑÐ¸Ð¼Ð°Ð»ÑŒÐ½Ð¾Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ Ð¸Ð· Ð¼Ð°ÑÑÐ¸Ð²Ð°: " << maxValueIn(arr, n) << endl;
 	Sort(arr, n);
 	Print(arr, n);
 	UniqueRand(arr, n,-10,10);
 
 	int number_of_shifts;
-	cout << "Ââåäèòå êîëè÷åñòâî ñäâèãîâ: "; cin >> number_of_shifts;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ ÑÐ´Ð²Ð¸Ð³Ð¾Ð²: "; cin >> number_of_shifts;
 	shiftLeft(arr, n, number_of_shifts);
 	Print(arr, n);
 	shiftRight(arr, n, n - number_of_shifts);
@@ -36,10 +36,10 @@ void main()
 	double brr[SIZE];
 	FillRand(brr, SIZE);
 	Print(brr, SIZE);
-	cout << "Ñóììà ýëåìåíòîâ ìàññèâà: " << Sum(brr, SIZE) << endl;
-	cout << "Ñðåäíåå àðèôìåòè÷åñêîå ýëåìåíòîâ ìàññèâà: " << Avg(brr, SIZE) << endl;
-	cout << "Ìèíèìàëüíîå çíà÷åíèå èç ìàññèâà: " << minValueIn(brr, SIZE) << endl;
-	cout << "Ìàêñèìàëüíîå çíà÷åíèå èç ìàññèâà: " << maxValueIn(brr, SIZE) << endl;
+	cout << "Ð¡ÑƒÐ¼Ð¼Ð° ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð² Ð¼Ð°ÑÑÐ¸Ð²Ð°: " << Sum(brr, SIZE) << endl;
+	cout << "Ð¡Ñ€ÐµÐ´Ð½ÐµÐµ Ð°Ñ€Ð¸Ñ„Ð¼ÐµÑ‚Ð¸Ñ‡ÐµÑÐºÐ¾Ðµ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð² Ð¼Ð°ÑÑÐ¸Ð²Ð°: " << Avg(brr, SIZE) << endl;
+	cout << "ÐœÐ¸Ð½Ð¸Ð¼Ð°Ð»ÑŒÐ½Ð¾Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ Ð¸Ð· Ð¼Ð°ÑÑÐ¸Ð²Ð°: " << minValueIn(brr, SIZE) << endl;
+	cout << "ÐœÐ°ÐºÑÐ¸Ð¼Ð°Ð»ÑŒÐ½Ð¾Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ Ð¸Ð· Ð¼Ð°ÑÑÐ¸Ð²Ð°: " << maxValueIn(brr, SIZE) << endl;
 	Sort(brr, SIZE);
 	Print(brr, SIZE);
 	UniqueRand(brr, SIZE);
@@ -50,10 +50,10 @@ void main()
 	float crr[n] = {};
 	FillRand(crr, n, 0, 100);
 	Print(crr, n);
-	cout << "Ñóììà ýëåìåíòîâ ìàññèâà: " << Sum(crr, n) << endl;
-	cout << "Ñðåäíåå àðèôìåòè÷åñêîå ýëåìåíòîâ ìàññèâà: " << Avg(crr, n) << endl;
-	cout << "Ìèíèìàëüíîå çíà÷åíèå èç ìàññèâà: " << minValueIn(crr, n) << endl;
-	cout << "Ìàêñèìàëüíîå çíà÷åíèå èç ìàññèâà: " << maxValueIn(crr, n) << endl;
+	cout << "Ð¡ÑƒÐ¼Ð¼Ð° ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð² Ð¼Ð°ÑÑÐ¸Ð²Ð°: " << Sum(crr, n) << endl;
+	cout << "Ð¡Ñ€ÐµÐ´Ð½ÐµÐµ Ð°Ñ€Ð¸Ñ„Ð¼ÐµÑ‚Ð¸Ñ‡ÐµÑÐºÐ¾Ðµ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð² Ð¼Ð°ÑÑÐ¸Ð²Ð°: " << Avg(crr, n) << endl;
+	cout << "ÐœÐ¸Ð½Ð¸Ð¼Ð°Ð»ÑŒÐ½Ð¾Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ Ð¸Ð· Ð¼Ð°ÑÑÐ¸Ð²Ð°: " << minValueIn(crr, n) << endl;
+	cout << "ÐœÐ°ÐºÑÐ¸Ð¼Ð°Ð»ÑŒÐ½Ð¾Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ Ð¸Ð· Ð¼Ð°ÑÑÐ¸Ð²Ð°: " << maxValueIn(crr, n) << endl;
 	Sort(crr, n);
 	Print(crr, n);
 	UniqueRand(crr, n);
@@ -62,10 +62,10 @@ void main()
 	char drr[n] = {};
 	FillRand(drr, n, 0, 100);
 	Print(arr, n);
-	cout << "Ñóììà ýëåìåíòîâ ìàññèâà: " << Sum(drr, n) << endl;
-	cout << "Ñðåäíåå àðèôìåòè÷åñêîå ýëåìåíòîâ ìàññèâà: " << Avg(drr, n) << endl;
-	cout << "Ìèíèìàëüíîå çíà÷åíèå èç ìàññèâà: " << minValueIn(drr, n) << endl;
-	cout << "Ìàêñèìàëüíîå çíà÷åíèå èç ìàññèâà: " << maxValueIn(drr, n) << endl;
+	cout << "Ð¡ÑƒÐ¼Ð¼Ð° ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð² Ð¼Ð°ÑÑÐ¸Ð²Ð°: " << Sum(drr, n) << endl;
+	cout << "Ð¡Ñ€ÐµÐ´Ð½ÐµÐµ Ð°Ñ€Ð¸Ñ„Ð¼ÐµÑ‚Ð¸Ñ‡ÐµÑÐºÐ¾Ðµ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð² Ð¼Ð°ÑÑÐ¸Ð²Ð°: " << Avg(drr, n) << endl;
+	cout << "ÐœÐ¸Ð½Ð¸Ð¼Ð°Ð»ÑŒÐ½Ð¾Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ Ð¸Ð· Ð¼Ð°ÑÑÐ¸Ð²Ð°: " << minValueIn(drr, n) << endl;
+	cout << "ÐœÐ°ÐºÑÐ¸Ð¼Ð°Ð»ÑŒÐ½Ð¾Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ Ð¸Ð· Ð¼Ð°ÑÑÐ¸Ð²Ð°: " << maxValueIn(drr, n) << endl;
 	Sort(drr, n);
 	UniqueRand(drr, n);
 
@@ -73,17 +73,17 @@ void main()
 	int i_arr_2[ROWS][COLS];
 	FillRand(i_arr_2, ROWS, COLS);
 	Print(i_arr_2, ROWS, COLS);
-	cout << "Ñóììà ýëåìåíòîâ ìàññèâà: " << Sum(i_arr_2, ROWS, COLS) << endl;
-	cout << "Ñðåäíåå àðèôìåòè÷åñêîå ýëåìåíòîâ ìàññèâà: " << Avg(i_arr_2, ROWS, COLS) << endl;
-	cout << "Ìèíèìàëüíîå çíà÷åíèå èç ìàññèâà: " << minValueIn(i_arr_2, ROWS, COLS) << endl;
-	cout << "Ìàêñèìàëüíîå çíà÷åíèå èç ìàññèâà: " << maxValueIn(i_arr_2, ROWS, COLS) << endl;
+	cout << "Ð¡ÑƒÐ¼Ð¼Ð° ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð² Ð¼Ð°ÑÑÐ¸Ð²Ð°: " << Sum(i_arr_2, ROWS, COLS) << endl;
+	cout << "Ð¡Ñ€ÐµÐ´Ð½ÐµÐµ Ð°Ñ€Ð¸Ñ„Ð¼ÐµÑ‚Ð¸Ñ‡ÐµÑÐºÐ¾Ðµ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð² Ð¼Ð°ÑÑÐ¸Ð²Ð°: " << Avg(i_arr_2, ROWS, COLS) << endl;
+	cout << "ÐœÐ¸Ð½Ð¸Ð¼Ð°Ð»ÑŒÐ½Ð¾Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ Ð¸Ð· Ð¼Ð°ÑÑÐ¸Ð²Ð°: " << minValueIn(i_arr_2, ROWS, COLS) << endl;
+	cout << "ÐœÐ°ÐºÑÐ¸Ð¼Ð°Ð»ÑŒÐ½Ð¾Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ Ð¸Ð· Ð¼Ð°ÑÑÐ¸Ð²Ð°: " << maxValueIn(i_arr_2, ROWS, COLS) << endl;
 	shiftLeft(i_arr_2, ROWS, COLS, number_of_shifts);
 	shiftRight(i_arr_2, ROWS, COLS, number_of_shifts);
 	//Sort(i_arr_2, ROWS, COLS);
 	//UniqueRand(i_arr_2, ROWS, COLS);
 
 
-	//cout << "Ââåäèòå êîëè÷åñòâî ñäâèãîâ: "; cin >> number_of_shifts;
+	//cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ ÑÐ´Ð²Ð¸Ð³Ð¾Ð²: "; cin >> number_of_shifts;
 	//shiftLeft(i_arr_2, ROWS, COLS, number_of_shifts);
 	//Print(i_arr_2, ROWS, COLS);
 	//shiftRight(i_arr_2, ROWS, COLS, n - number_of_shifts);
@@ -94,10 +94,10 @@ void main()
 	double i_brr_2[ROWS][COLS];
 	FillRand(i_brr_2, ROWS, COLS);
 	Print(i_brr_2, ROWS, COLS);
-	cout << "Ñóììà ýëåìåíòîâ ìàññèâà: " << Sum(i_brr_2, ROWS, COLS) << endl;
-	cout << "Ñðåäíåå àðèôìåòè÷åñêîå ýëåìåíòîâ ìàññèâà: " << Avg(i_brr_2, ROWS, COLS) << endl;
-	cout << "Ìèíèìàëüíîå çíà÷åíèå èç ìàññèâà: " << minValueIn(i_brr_2, ROWS, COLS) << endl;
-	cout << "Ìàêñèìàëüíîå çíà÷åíèå èç ìàññèâà: " << maxValueIn(i_brr_2, ROWS, COLS) << endl;
+	cout << "Ð¡ÑƒÐ¼Ð¼Ð° ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð² Ð¼Ð°ÑÑÐ¸Ð²Ð°: " << Sum(i_brr_2, ROWS, COLS) << endl;
+	cout << "Ð¡Ñ€ÐµÐ´Ð½ÐµÐµ Ð°Ñ€Ð¸Ñ„Ð¼ÐµÑ‚Ð¸Ñ‡ÐµÑÐºÐ¾Ðµ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð² Ð¼Ð°ÑÑÐ¸Ð²Ð°: " << Avg(i_brr_2, ROWS, COLS) << endl;
+	cout << "ÐœÐ¸Ð½Ð¸Ð¼Ð°Ð»ÑŒÐ½Ð¾Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ Ð¸Ð· Ð¼Ð°ÑÑÐ¸Ð²Ð°: " << minValueIn(i_brr_2, ROWS, COLS) << endl;
+	cout << "ÐœÐ°ÐºÑÐ¸Ð¼Ð°Ð»ÑŒÐ½Ð¾Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ Ð¸Ð· Ð¼Ð°ÑÑÐ¸Ð²Ð°: " << maxValueIn(i_brr_2, ROWS, COLS) << endl;
 	shiftLeft(i_brr_2, ROWS, COLS, number_of_shifts);
 	shiftRight(i_brr_2, ROWS, COLS, number_of_shifts);
 	Sort(i_brr_2, ROWS, COLS);
@@ -107,10 +107,10 @@ void main()
 	float i_crr_2[ROWS][COLS];
 	FillRand(i_crr_2, ROWS, COLS);
 	Print(i_crr_2, ROWS, COLS);
-	cout << "Ñóììà ýëåìåíòîâ ìàññèâà: " << Sum(i_crr_2, ROWS, COLS) << endl;
-	cout << "Ñðåäíåå àðèôìåòè÷åñêîå ýëåìåíòîâ ìàññèâà: " << Avg(i_crr_2, ROWS, COLS) << endl;
-	cout << "Ìèíèìàëüíîå çíà÷åíèå èç ìàññèâà: " << minValueIn(i_crr_2, ROWS, COLS) << endl;
-	cout << "Ìàêñèìàëüíîå çíà÷åíèå èç ìàññèâà: " << maxValueIn(i_crr_2, ROWS, COLS) << endl;
+	cout << "Ð¡ÑƒÐ¼Ð¼Ð° ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð² Ð¼Ð°ÑÑÐ¸Ð²Ð°: " << Sum(i_crr_2, ROWS, COLS) << endl;
+	cout << "Ð¡Ñ€ÐµÐ´Ð½ÐµÐµ Ð°Ñ€Ð¸Ñ„Ð¼ÐµÑ‚Ð¸Ñ‡ÐµÑÐºÐ¾Ðµ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð² Ð¼Ð°ÑÑÐ¸Ð²Ð°: " << Avg(i_crr_2, ROWS, COLS) << endl;
+	cout << "ÐœÐ¸Ð½Ð¸Ð¼Ð°Ð»ÑŒÐ½Ð¾Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ Ð¸Ð· Ð¼Ð°ÑÑÐ¸Ð²Ð°: " << minValueIn(i_crr_2, ROWS, COLS) << endl;
+	cout << "ÐœÐ°ÐºÑÐ¸Ð¼Ð°Ð»ÑŒÐ½Ð¾Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ Ð¸Ð· Ð¼Ð°ÑÑÐ¸Ð²Ð°: " << maxValueIn(i_crr_2, ROWS, COLS) << endl;
 	shiftLeft(i_crr_2, ROWS, COLS, number_of_shifts);
 	shiftRight(i_crr_2, ROWS, COLS, number_of_shifts);
 	Sort(i_crr_2, ROWS, COLS);
@@ -120,10 +120,10 @@ void main()
 	char i_drr_2[ROWS][COLS];
 	FillRand(i_drr_2, ROWS, COLS);
 	Print(i_drr_2, ROWS, COLS);
-	cout << "Ñóììà ýëåìåíòîâ ìàññèâà: " << Sum(i_drr_2, ROWS, COLS) << endl;
-	cout << "Ñðåäíåå àðèôìåòè÷åñêîå ýëåìåíòîâ ìàññèâà: " << Avg(i_drr_2, ROWS, COLS) << endl;
-	cout << "Ìèíèìàëüíîå çíà÷åíèå èç ìàññèâà: " << minValueIn(i_drr_2, ROWS, COLS) << endl;
-	cout << "Ìàêñèìàëüíîå çíà÷åíèå èç ìàññèâà: " << maxValueIn(i_drr_2, ROWS, COLS) << endl;
+	cout << "Ð¡ÑƒÐ¼Ð¼Ð° ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð² Ð¼Ð°ÑÑÐ¸Ð²Ð°: " << Sum(i_drr_2, ROWS, COLS) << endl;
+	cout << "Ð¡Ñ€ÐµÐ´Ð½ÐµÐµ Ð°Ñ€Ð¸Ñ„Ð¼ÐµÑ‚Ð¸Ñ‡ÐµÑÐºÐ¾Ðµ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð² Ð¼Ð°ÑÑÐ¸Ð²Ð°: " << Avg(i_drr_2, ROWS, COLS) << endl;
+	cout << "ÐœÐ¸Ð½Ð¸Ð¼Ð°Ð»ÑŒÐ½Ð¾Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ Ð¸Ð· Ð¼Ð°ÑÑÐ¸Ð²Ð°: " << minValueIn(i_drr_2, ROWS, COLS) << endl;
+	cout << "ÐœÐ°ÐºÑÐ¸Ð¼Ð°Ð»ÑŒÐ½Ð¾Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ Ð¸Ð· Ð¼Ð°ÑÑÐ¸Ð²Ð°: " << maxValueIn(i_drr_2, ROWS, COLS) << endl;
 	shiftLeft(i_drr_2, ROWS, COLS, number_of_shifts);
 	shiftRight(i_drr_2, ROWS, COLS, number_of_shifts);
 	Sort(i_drr_2, ROWS, COLS);

@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 using namespace std;
 
 
@@ -19,21 +19,21 @@ void main()
 	int n;
 #ifdef ELEVATOR
 	cout << "Hello Recursion" << endl;
-	cout << "Ââåäèòå íîìåð ýòàæà: "; cin >> n;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð½Ð¾Ð¼ÐµÑ€ ÑÑ‚Ð°Ð¶Ð°: "; cin >> n;
 	elevator(n);
 #endif ELEVATOR
 #ifdef FACTORIAL
-	cout << "Ââåäèòå ôàêòîðèàë ÷èñëà: "; cin >> n;
-	cout << "Ôàêòîðèàë ÷èñëà " << n << " ðàâåí: " << factorial(n) << endl;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ„Ð°ÐºÑ‚Ð¾Ñ€Ð¸Ð°Ð» Ñ‡Ð¸ÑÐ»Ð°: "; cin >> n;
+	cout << "Ð¤Ð°ÐºÑ‚Ð¾Ñ€Ð¸Ð°Ð» Ñ‡Ð¸ÑÐ»Ð° " << n << " Ñ€Ð°Ð²ÐµÐ½: " << factorial(n) << endl;
 #endif FACTORIAL
 #ifdef POW
 	int a, b;
-	cout << "Ââåäèòå  ÷èñëî: "; cin >> a;
-	cout << "Ââåäèòå  ñòåïåíü ÷èñëà: "; cin >> n;
-	cout << "×èñëî: " << a << " â ñòåïåíè" << b << " ðàâíî: " << pow(a,n) << endl;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ  Ñ‡Ð¸ÑÐ»Ð¾: "; cin >> a;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ  ÑÑ‚ÐµÐ¿ÐµÐ½ÑŒ Ñ‡Ð¸ÑÐ»Ð°: "; cin >> n;
+	cout << "Ð§Ð¸ÑÐ»Ð¾: " << a << " Ð² ÑÑ‚ÐµÐ¿ÐµÐ½Ð¸" << b << " Ñ€Ð°Ð²Ð½Ð¾: " << pow(a,n) << endl;
 #endif POW
 #ifdef FIBONACCI
-	cout << "Ââåäèòå ïðåäåëüíîå ÷èñëî: "; cin >> n;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¿Ñ€ÐµÐ´ÐµÐ»ÑŒÐ½Ð¾Ðµ Ñ‡Ð¸ÑÐ»Ð¾: "; cin >> n;
 	fibonacci1(n);
 	cout << endl;
 	fibonacci2(n);
@@ -44,12 +44,12 @@ void elevator(int floor)
 {
 	if(floor==0)
 	{
-		cout << "Âû â ïîäâàëå" << endl;
+		cout << "Ð’Ñ‹ Ð² Ð¿Ð¾Ð´Ð²Ð°Ð»Ðµ" << endl;
 		return;
 	}
-	cout << "Âû íà " << floor << " ýòàæå" << endl;
+	cout << "Ð’Ñ‹ Ð½Ð° " << floor << " ÑÑ‚Ð°Ð¶Ðµ" << endl;
 	elevator(floor-1);
-	cout << "Âû íà " << floor << " ýòàæå" << endl;
+	cout << "Ð’Ñ‹ Ð½Ð° " << floor << " ÑÑ‚Ð°Ð¶Ðµ" << endl;
 
 }
 
