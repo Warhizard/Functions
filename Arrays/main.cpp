@@ -2,11 +2,19 @@
 #include "constants.h"
 #include "FillRand.h"
 #include "Print.h"
+#include "Print.cpp"
 #include "Statistics.h"
+#include "Statistics.cpp"
 #include "Shift.h"
+#include "Shift.cpp"
 #include "Sort.h"
+#include "Sort.cpp"
 #include "Search.h"
+#include "Search.cpp"
 #include "UniqRand.h"
+#include "UniqRand.cpp"
+
+
 
 void main()
 {

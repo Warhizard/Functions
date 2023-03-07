@@ -1,5 +1,5 @@
 #include "UniqRand.h"
-
+#include "stdafx.h"
 template <typename T>
 void UniqueRand(T arr[], const int n, int minRand, int maxRand)
 {
